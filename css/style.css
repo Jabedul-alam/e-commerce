@@ -1,0 +1,32 @@
+/*
+Theme Name: Nest
+ Description: Grocery, Super Market, eCommerce HTML Template
+ Aurthor name: Jabed
+ Version: 1.0
+ ===========================================================
+ table of content
+ ------------------
+ 1)common
+ */
+@root{
+    --Lato:'Lato', sans-serif;
+    --Quicksand:'Quicksand', sans-serif;
+    --hlt-color:#3BB77E;
+    -text-clr:#253D4E;
+    -white:#fff;
+
+}
+
+/* common css strat*/
+h1,h2,h3,h4,h5,
+p,span ul{
+    margin: 0;
+    padding: 0;
+}
+a,a:hover{
+    text-decoration: none;
+}
+img{
+    display: block;
+    width: 100%;
+}
