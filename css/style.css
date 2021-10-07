@@ -8,16 +8,14 @@ Theme Name: Nest
  ------------------
  1)common
  */
-@root{
+ /* common css strat*/
+:root{
     --Lato:'Lato', sans-serif;
     --Quicksand:'Quicksand', sans-serif;
     --hlt-color:#3BB77E;
-    -text-clr:#253D4E;
-    -white:#fff;
-
+    --text-clr:#253D4E;
+    --white:#fff;
 }
-
-/* common css strat*/
 h1,h2,h3,h4,h5,
 p,span ul{
     margin: 0;
@@ -30,3 +28,35 @@ img{
     display: block;
     width: 100%;
 }
+h1,h2,h3,h4,h5,h6{
+    font-size: var(--Quicksand);
+    color:var(--text-clr) ;
+}
+ul{
+    list-style-type: none;
+}
+.form-control:focus,
+.btn:focus,
+.form-select:focus{
+    box-shadow: none;
+}
+/* common css end*/
+/*header section strat */
+header ul li{
+    display: inline-block;
+}
+/*top header section strat */
+
+/*top header section end */
+/*middle header section strat */
+
+/*middle header section end */
+
+header .middle_header form.search_box .form-control,
+header .middle_header form.search_box select{
+    border: none;
+}
+header .middle_header form.search_box{
+    border: 1px solid var(--hlt-color);
+    }
+/*header section end */
