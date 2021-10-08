@@ -5,7 +5,7 @@ $(function (){
             vertical:true,
             verticalSwiping:true,
             autoplay: true,
-            autoplaySpeed: 500,
+            autoplaySpeed: 1000,
         })
      // top header news slider js end
 })
