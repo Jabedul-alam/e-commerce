@@ -91,6 +91,23 @@ header ul {
 header li.extra{
   top: -6px;
 }
+.top_right_header ul .more{
+    width: 190px;
+    padding-right: 60px;
+    height: 100%;
+    position: relative;
+}
+.top_right_header ul .more span{
+    padding: 0 69px 0 0;
+}
+.top_right_header ul .more a {
+    position: absolute;
+    margin-left: 10px;
+    /* display: inline; */
+    /* float: right; */
+    top: 0;
+    right: 0;
+}
 /*top header section end */
 /*middle header section strat */
 header .middle_header{
@@ -169,22 +186,21 @@ header .middle_header .selc_opt::after {
     position: absolute;
     z-index: 1000;
     display: none;
-    padding: .5rem 0;
+    padding: 5px 0;
     margin: 0;
-    font-size: 1rem;
+    font-size:13px;
     color: #212529;
     text-align: left;
     list-style: none;
-    background-color: #fff;
-    border: 1px solid rgba(0,0,0,.15);
-    border-radius: .25rem;
+    border-radius:3px;
     transition: all linear .3s;
-    display: block;
+    display: none;
     opacity: 0;
-    width: 100%;
+    min-width:0;
+
 }
 .dropdown-menu li{
-    width: 100%;
+    display: block;
 }
 .dropdown-menu li a{
     padding: .5rem 0;
@@ -193,23 +209,33 @@ header .middle_header .selc_opt::after {
 }
 .dropdown:hover .dropdown-menu{
   opacity: 1;
+  display: block;
 }
 
-
-.top_right_header ul .more{
-    width: 190px;
-    padding-right: 60px;
-    height: 100%;
-    position: relative;
-}
-.top_right_header ul .more span{
-    padding: 0 69px 0 0;
-}
-.top_right_header ul .more a {
+.dropdown-menu {
     position: absolute;
-    margin-left: 10px;
-    /* display: inline; */
-    /* float: right; */
-    top: 0;
-    right: 0;
+    z-index: 1000;
+    display: none;
+    min-width: 10px;
+    padding: .5rem 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+}
+.extra{
+    min-width: 50px !important;
+}
+li.dropdown.need {
+    bottom: 6px;
+}
+.dropdown-toggle::after {
+    bottom: -8px;
+    right: 10px;
+    position: absolute;
 }
