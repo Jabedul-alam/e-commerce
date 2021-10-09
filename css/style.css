@@ -103,10 +103,46 @@ header li.extra{
 .top_right_header ul .more a {
     position: absolute;
     margin-left: 10px;
-    /* display: inline; */
-    /* float: right; */
     top: 0;
     right: 0;
+}
+
+.dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    padding: 5px 0;
+    margin: 0;
+    font-size:13px;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    border-radius:3px;
+    transition: all linear .3s;
+    display: none;
+    opacity: 0;
+    min-width:0;
+
+}
+.extra-help li a{
+    padding: 5px 10px;
+}
+.dropdown-menu li a{
+    padding: .5rem 0px;
+    width: 100%;
+    display: inline-block;
+}
+.dropdown:hover .dropdown-menu{
+  opacity: 1;
+  display: block;
+}
+li.dropdown.need {
+    bottom: 6px;
+}
+.dropdown-toggle::after {
+    bottom: -8px;
+    right: 10px;
+    position: absolute;
 }
 /*top header section end */
 /*middle header section strat */
@@ -182,60 +218,20 @@ header .middle_header .selc_opt::after {
 
 /*header section end */
 
-.dropdown-menu {
-    position: absolute;
-    z-index: 1000;
-    display: none;
-    padding: 5px 0;
-    margin: 0;
-    font-size:13px;
-    color: #212529;
-    text-align: left;
-    list-style: none;
-    border-radius:3px;
-    transition: all linear .3s;
-    display: none;
-    opacity: 0;
-    min-width:0;
 
-}
-.dropdown-menu li{
-    display: block;
-}
-.dropdown-menu li a{
-    padding: .5rem 0;
-    width: 100%;
-    display: inline-block;
-}
-.dropdown:hover .dropdown-menu{
-  opacity: 1;
-  display: block;
-}
-
-.dropdown-menu {
-    position: absolute;
-    z-index: 1000;
-    display: none;
-    min-width: 10px;
-    padding: .5rem 0;
-    margin: 0;
-    font-size: 1rem;
-    color: #212529;
-    text-align: left;
-    list-style: none;
+/*form*/
+.form-select option{
     background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.15);
-    border-radius: .25rem;
 }
-.extra{
-    min-width: 50px !important;
+
+.form-select option:hover{
+    background-color: red;
+
 }
-li.dropdown.need {
-    bottom: 6px;
-}
-.dropdown-toggle::after {
-    bottom: -8px;
-    right: 10px;
-    position: absolute;
+.form-select .jabed{
+    border: 1px solid #ececec;
+    border-radius: 0 0 4px 4px;
+    padding: 15px;
+    min-width: 220px;
+
 }
